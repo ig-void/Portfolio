@@ -61,15 +61,15 @@ function App() {
       <div className="flex flex-wrap gap-8 mt-4 items-center justify-center">
         <FaHtml5 color="yellow" size={50} className=" hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:1s]"/>
         <RiTailwindCssFill color="skyblue" size={50} className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:2.5s]"/>
-        <RiJavascriptFill color="Yellow" size={50} className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:2s]"/>
+        <RiJavascriptFill color="Yellow" size={50} className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:1.5s]"/>
         <RiReactjsLine size={50} color="royalblue" className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:1s]"/>
         <DiNodejs size={50} color="green" className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:2.5s]"/>
         <FaPython size={50} color="blue" className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:2s]"/>
-        <SiExpress size={50} color="yellow" className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:2s]"/>
+        <SiExpress size={50} color="yellow" className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:1.5s]"/>
         <SiMongodb size={50} color="green" className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:1s]"/>
         <SiPostman size={50} color="orange" className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:2s]"/>
         <DiJava size={50} color="royalblue" className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:2.5s]"/>
-        <SiMysql size={50} color="skyblue" className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:1s]"/>  
+        <SiMysql size={50} color="skyblue" className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:1.5s]"/>  
             </div>
     </div>
     {/* Projects */}
@@ -83,11 +83,21 @@ function App() {
             <div className="h-40 md:h-56 mt-4 rounded-t-xl flex justify-center items-center">
               <img className="w-32 h-32 md:w-50 md:h-50   object-cover" src={d.image} alt="Image" />
             </div>
-            <div className="text-white flex flex-col items-center justify-center text-center mt-4">
-              <h3 className="bg-gradient-to-br from-red-600 to-red-500 bg-clip-text text-2xl md:text-4xl text-transparent mb-3">{d.title}</h3>
+            <div className="text-white flex flex-col items-center justify-center text-center gap-y-3 mt-4">
+              <h3 className="bg-gradient-to-br from-red-600 to-red-400 bg-clip-text text-2xl md:text-4xl text-transparent ">{d.title}</h3>
               <p className="text-sm md:text-base">{d.description}</p>
-              <p className="text-sm md:text-base break-all"><span className="font-bold">Link: </span><a target="_blank" rel="noopener noreferrer" href={d.liveLink}>{d.liveLink}</a></p>
-              <p className="text-sm md:text-base break-all"><span className="font-bold">Repo: </span><a target="_blank" rel="noopener noreferrer" href="{d.repoLink}">{d.repoLink}</a></p>
+
+              <div className="rounded-md bg-gradient-to-br from-red-600 to-black p-[2px] w-full md:w-auto hover:bg-gradient-to-br hover:from-black hover:to-red-600">
+              <div className="rounded-md flex flex-row items-center justify-center  bg-gray-900 px-3">
+              <p className="text-sm md:text-base break-all"><span className="font-bold"> </span><a target="_blank" rel="noopener noreferrer" href={d.liveLink}>Live Website</a></p>
+              </div>
+              </div>
+
+              <div className="rounded-md bg-gradient-to-br from-blue-300 to-black p-[2px] w-full md:w-auto hover:bg-gradient-to-br hover:from-gray-800 hover:to-gray-400">
+              <div className="rounded-md flex flex-row items-center justify-center  bg-gray-900 px-3">
+              <p className="text-sm md:text-base break-all"><span className="font-bold"> </span><a target="_blank" rel="noopener noreferrer" href="{d.repoLink}">Git Repo</a></p>
+              </div>
+              </div>
             </div>
           </div>
         ))}
