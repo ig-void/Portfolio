@@ -19,6 +19,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AnimatedCharacter from "./components/AnimatedCharacter.jsx";
 import YogaChar from "./components/YogaChar.jsx";
+import Developer from "./components/Developer.jsx";
 function App() {
   const settings={
     dots:false,
@@ -49,7 +50,8 @@ function App() {
     </div>
     {/* About ME */}
     <div id="About Me" className="flex flex-col md:flex-row justify-evenly min-h-screen bg-neutral-900 items-center px-6 md:px-12">
-       <img className="w-60 h-60 md:w-80 md:h-80 rounded-md object-cover shadow-3xl bg-gradient-to-br from-red-600 to-black" src="Coding1.jpg" alt="Profile" />
+       {/* <img className="w-60 h-60 md:w-80 md:h-80 rounded-md object-cover shadow-3xl bg-gradient-to-br from-red-600 to-black" src="Coding1.jpg" alt="Profile" /> */}
+       <Developer/>
     <div className="flex flex-col w-full md:w-1/2 justify-center mt-6 md:mt-0">
       <h1 className="bg-gradient-to-br from-red-600 to-black bg-clip-text text-3xl md:text-4xl text-transparent">About Me!</h1>
       <p className="text-white text-sm md:text-base mt-3">Motivated developer specializing in full stack and frontend web project, currently pursuing a B.Tech in Couputer Science & Engineering at KCC Institure of Technology and Management. With hands-on experience at CodexInter, I am skilled at building interactive and efficient web Solutions. My approach blends creativity and technical expertise,always aiming for impactful user experiences and clean, maintainable code. I thrive on collaboration, continous learning, and translating ideas into functional products.</p>
@@ -57,7 +59,7 @@ function App() {
     </div>
     {/* Skills */}
     <div id="Skills" className="flex flex-col bg-zinc-900 justify-center items-center py-16 gap-y-10 px-6 md:px-12">
-      <h1 className="text-white text-3xl md:text-4xl">Skills</h1>
+      <h1 className="bg-gradient-to-br from-red-600 to-red-950 bg-clip-text text-3xl md:text-4xl text-transparent">Skills</h1>
       <div className="flex flex-wrap gap-8 mt-4 items-center justify-center">
         <FaHtml5 color="yellow" size={50} className=" hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:1s]"/>
         <RiTailwindCssFill color="skyblue" size={50} className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:2.5s]"/>
@@ -74,7 +76,7 @@ function App() {
     </div>
     {/* Projects */}
     <div id="Projects" className="bg-neutral-950  flex justify-center items-center min-h-screen flex-col px-6 md:px-12">
-      <h1 className="text-white mt-5 text-3xl md:text-4xl">Projects</h1>
+      <h1 className="bg-gradient-to-br from-red-600 to-red-950 bg-clip-text text-3xl md:text-4xl text-transparent">Projects</h1>
       <div className="w-full md:w-1/2 m-auto mt-8">
       <div className="">
         <Slider {...settings}>
@@ -120,7 +122,7 @@ function App() {
     </div> */}
     {/* Contact me */}
     <div id="contact" className="flex min-h-screen flex-col px-6 md:px-12 bg-neutral-900 items-center ">
-  <h1 className="text-white mt-9 text-3xl md:text-4xl">Contacts</h1>
+  <h1 className="bg-gradient-to-br from-red-600 to-red-950 bg-clip-text text-3xl md:text-4xl text-transparent">Contacts</h1>
   <div className="mt-8 w-full md:w-3/4 bg-gray-900 text-white flex rounded-4xl flex-col justify-center items-center h-full pb-6">
     <AnimatedCharacter />
     <div className=" flex flex-col md:flex-row w-full justify-center items-center gap-3 px-4">
