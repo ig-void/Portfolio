@@ -13,6 +13,7 @@ import { CiLinkedin } from "react-icons/ci";
 import { SiLeetcode } from "react-icons/si";
 import { DiJava } from "react-icons/di";
 import { FaPython } from "react-icons/fa";
+import { SiMysql } from "react-icons/si";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -59,16 +60,17 @@ function App() {
       <h1 className="text-white text-3xl md:text-4xl">Skills</h1>
       <div className="flex flex-wrap gap-8 mt-4 items-center justify-center">
         <FaHtml5 color="yellow" size={50} className=" hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:1s]"/>
-        <RiTailwindCssFill color="lightblue" size={50} className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:2.5s]"/>
+        <RiTailwindCssFill color="skyblue" size={50} className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:2.5s]"/>
         <RiJavascriptFill color="Yellow" size={50} className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:2s]"/>
         <RiReactjsLine size={50} color="royalblue" className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:1s]"/>
         <DiNodejs size={50} color="green" className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:2.5s]"/>
+        <FaPython size={50} color="blue" className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:2s]"/>
         <SiExpress size={50} color="yellow" className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:2s]"/>
         <SiMongodb size={50} color="green" className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:1s]"/>
-        <SiPostman size={50} color="yellow" className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:2s]"/>
+        <SiPostman size={50} color="orange" className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:2s]"/>
         <DiJava size={50} color="royalblue" className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:2.5s]"/>
-        <FaPython size={50} color="yellow" className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:2s]"/>
-      </div>
+        <SiMysql size={50} color="skyblue" className="hover:drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-bounce [animation-duration:1s]"/>  
+            </div>
     </div>
     {/* Projects */}
     <div id="Projects" className="bg-neutral-950  flex justify-center items-center min-h-screen flex-col px-6 md:px-12">
@@ -142,18 +144,25 @@ function App() {
   )
 }
 const projects=[
+      {
+    title: "Portfolio",
+    description: "A personal portfolio website built with React and Tailwind CSS to showcase my skills, projects, and experience in web development.",
+    image: "logo.svg",
+    liveLink: "https://portfolio-theta-three-88.vercel.app/",
+    repoLink: "https://github.com/ig-void/Portfolio.git"
+  },
     {
     title: "NoteNest",
     description: "Note-taking app with full CRUD operation and authentication.",
     image: "3131619.png",
-    liveLink: "https://live-notenest.com",
+    liveLink: "https://note-nest-roan.vercel.app/",
     repoLink: "https://github.com/ig-void/NoteNest.git"
   },
       {
     title: "MyExcel",
     description: "Excel Analytics platform which allows user to generate 2-d and 3-d charts also user can view their previosly generated charts.",
     image:"excel.webp",
-    liveLink: "https://live-notenest.com",
+    liveLink: "https://my-excel-rho.vercel.app/",
     repoLink: "https://github.com/ig-void/MyExcel.git"
   },
     {
