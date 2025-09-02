@@ -165,11 +165,11 @@ const projects=[
     liveLink: "https://my-excel-rho.vercel.app/",
     repoLink: "https://github.com/ig-void/MyExcel.git"
   },
-    {
-    title: "Blog",
-    description: "Blogging site where users can create, like, comment & follow.",
-    image: "images.png",
-  },
+  //   {
+  //   title: "Blog",
+  //   description: "Blogging site where users can create, like, comment & follow.",
+  //   image: "images.png",
+  // },
 
 
   {
