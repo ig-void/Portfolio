@@ -8,7 +8,7 @@ const Developer = () => {
         animationData={developer}
         loop
         autoplay
-        style={{ width:500, height: 500}}
+        style={{ width:400, height: 500}}
       />
     </div>
   )
